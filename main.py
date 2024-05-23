@@ -2,7 +2,7 @@ from TeacherCRUD import TeacherCRUD
 from database import Database
 from query import querys
 
-# Cria uma instância da classe Database, passando os dados de conexão com o banco de dados Neo4j
+
 db = Database("bolt://52.90.14.35:7687", "neo4j", "alcohols-plot-fold")
 teacherBD = querys(db)
 CRUD = TeacherCRUD(db)
